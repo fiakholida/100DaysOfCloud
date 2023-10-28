@@ -18,9 +18,11 @@
   Model layanan cloud ada 3, yaitu:
 - **Infrastructure as a service(IaaS)**
     Layanan dalam kategori ini adalah layanan infrastruktur komputasi awan yang berupa, satu paket perangkat hardware komputer virtual, bersama dengan jaringan internet, bandwidth, dan dukungan alamat IP. Terdapat jaminan online secara real time dan keamanan dalam "ruang lingkup" satu unit layanan IaaS.
-  - **Platform as a service (PaaS)**
+  
+- **Platform as a service (PaaS)**
      Layanan dalam kategori ini menghilangkan kebutuhan organisasi untuk mengelola infrastruktur dasarnya (biasanya perangkat keras dan sistem operasi), serta memungkinkan Anda untuk fokus pada deployment dan pengelolaan aplikasi Anda.
-    - **Software as a service (SaaS)**
+    
+- **Software as a service (SaaS)**
        Layanan dalam kategori ini memberikan Anda produk lengkap yang dijalankan dan dikelola oleh penyedia layanan. Tidak perlu lagi memikirkan cara memelihara layanan atau cara mengelola infrastruktur dasar. Contoh umum aplikasi SaaS adalah **email** berbasis web yang dapat digunakan untuk mengirim dan menerima email tanpa mengelola penambahan fitur ke produk email, atau memeliharaserver dan sistem operasi tempat program email dijalankan.
       
 ## Manfaat dan Kelebihan Cloud Computing
