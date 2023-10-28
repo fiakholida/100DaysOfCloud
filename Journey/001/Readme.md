@@ -37,34 +37,32 @@ AWS Cloud Foundation
 ## Model Deployment Cloud Computing dan Contohnya
   Ada 3 model deployment cloud computing utama, yaitu:
 - **Public Cloud (Cloud)**
-  Service cloud ini tersedia secara umum di Internet. Kita bisa menggunakannya dengan cara memesan/membelinya melalui provider cloud yang tersedia. Misalnya melalui AWS, Google Cloud, Microsoft Azure, Alibaba Cloud, IBM Cloud, dll. Server, jaringan, storage, aplikasi, dll pengelolaannya dilakukan oleh provider atau penyedia cloud tersebut. Kita biasanya hanya membeli sesuai dengan kebutuhan.
+  Service cloud ini tersedia secara umum di Internet. Kita bisa menggunakannya dengan cara memesan/membelinya melalui provider cloud yang tersedia. Misalnya melalui **AWS, Google Cloud, Microsoft Azure, Alibaba Cloud, IBM Cloud, dll**. Server, jaringan, storage, aplikasi, dll pengelolaannya dilakukan oleh provider atau penyedia cloud tersebut. Kita biasanya hanya membeli sesuai dengan kebutuhan.
 
 - **Hybrid Cloud**
-  Merupakan kombinasi antara Cloud dengan Private Cloud (On-Premise).
-- **PrivateOn-Premise**
+  Merupakan kombinasi antara Cloud dengan Private Cloud (On-Premise). Contoh: server lokal kolaborasi dengan AWS
+- **Private Cloud (On-Premise)**
   Deployment model ini tidak tersedia secara umum, hanya tersedia untuk perusahaan tertentu. Infrastruktur dipunyai atau disewa oleh pemilik bisnis itu sendiri. Contoh: Rackspace
-### Step 1 — Summary of Step
+  ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/416972bf-f376-4c9a-a37b-49627ecc0a7f)
 
-![Screenshot](https://via.placeholder.com/500x300)
+## Pengenalan AWS
+  ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/4e8dda62-7b6d-4071-8510-b2cbac5f2479)
+**Amazon Web Services (AWS)** adalah platform cloud yang aman yang menawarkan serangkaian produk global berbasis cloud yang luas. Karena produk ini diberikan melalui internet, Anda memiliki akses sesuai permintaan ke komputasi, penyimpanan, jaringan, basis data, dan sumber daya IT lainnya yang mungkin Anda perlukan untuk proyek Anda—dan alat untuk mengelolanya. Anda dapat segera menyediakan dan meluncurkan sumber daya AWS. Sumber daya siap untuk Anda gunakan dalam hitungan menit.
+  AWS menawarkan fleksibilitas. Lingkungan AWS Anda dapat dikonfigurasi ulang dan diperbarui sesuai permintaan, ditingkatkan atau diturunkan secara otomatis untuk memenuhi pola penggunaan dan mengoptimalkan pengeluaran, atau mematikan sementara atau permanen. Penagihan untuk layanan AWS menjadi biaya operasional, bukan biaya modal.
 
-### Step 1 — Summary of Step
+## Infrastruktur AWS (Region, AZ, POP & Edge dan Data Center)
+- Region
+  Region adalah pusat data. Untuk menemukan region kalian bisa menggunakan konsol Amazon EC2, dari bilah navigasi pilih region
+  ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/1c1f8dd7-b5c6-4171-bf4f-6c4806832c2b)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Availability Zones
+  Availability Zone (AZ) adalah satu atau lebih pusat data tersembunyi dengan daya, jaringan dan konektivitas yang melimpah di Wilayah AWS. Kode untuk Availability Zone adalah kode Wilayahnya diikuti dengan pengidentifikasi huruf. Misalnya, us-east-1a. Saat meluncurkan sebuah instance, kita memilih region dan virtual private cloud (VPC) lalu dapat memilih subnet dari salah satu availability zones atayu dipilihkan.
 
-### Step 3 — Summary of Step
+- POP & Edge
+  AWS Edge Location adalah lokasi fisik atau Point of Presence (PoP) yang memampukan penggunaan edge computing, caching, dan memiliki konektivitas ke AWS Global Network. Amazon memiliki 216 Titik Kehadiran (205 Lokasi Edge & 11 Regional Cache) di 84 kota di 42 negara. Konten dikirimkan ke pengguna akhir dengan latensi lebih rendah.
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+- Data Center
+  Data Center merupakan ruangan yang dirancang khusus yang berisi infrastruktur komputasi yang dibutuhkan sistem TI, seperti server, drive penyimpanan data, dan peralatan jaringan yang biasanya terhubung dengan jaringan internet.
+  
+## Knowledge Chapter 1
+![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/aa3f6464-5a60-4793-9514-725415acb568)
