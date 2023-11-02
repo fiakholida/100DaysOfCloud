@@ -6,27 +6,27 @@
 
 ## Introduction
 ## Chapter 2 - Cloud Economics and Billing
-### Dasar-dasar harga
+### - Dasar-dasar harga
 #### Model harga AWS
   Ada tiga pendorong dasar biaya dengan AWS, yaitu: **KOmputasi, Penyimpanan, Transfer data keluar**. Untuk karakteristikny bervariasi, tergantung produk AWS dan model harga yang dipilih.
 - Komputasi: dikenai biaya per jam/detik, bervariasi sesuai tie instans
 - Peyimpanan: biasanya dikenai biaya per GB
 - Transfer data keluar: data keluar dijumlahkan dan dikenai biaya, data masuk tidak dikenai biaya, biasanya dikenai biaya per GB. Untuk transfer data keluar dijumlahkan di seluruh layanan kemudian dibebankan pada tarif transfer data kelar. Biaya ini akan terlihat pada laporan bulanan sebagai AWS Data Transfer Out.
 
-#### How to pay for AWS?
+#### - How to pay for AWS?
   AWS menawarkan berbagai layanan cloud computing. Untuk setiap layanan nya, kita membayar persis dengan jumlah sumber daya yang benar-benar diperlukan. Model harga bergaya utilitas ini meliput:
   - **Bayar sesuai yang digunakan**. Hanya membayar untuk layanan yang dikonsumsi, tanpa biaya dimuka yang besar
   - **Bayar lebih sedikit ketika melakukan pemesanan**. Berinvestasi di instans terpesan, akan menerima diskon yang leih besar saat melakukan pembayaran di muka yang lebih besar
   - **Bayar lebih sedikit saat menggunakan lebih banyak**. Diskon berbasis volume. Dengan AWS, bisa mendapatkan diskon berbasis volume dan mewujudkan penghematan seiring meningkatnya penggunaan.
   - **Bayar jauh lebih sedikit seiring berkembangnya AWS**. Berfokus pada menurunkan biaya dalam menjalankan bisnis. Sumber daya berkinerja lebih tinggi di masa depan akan menggantikan sumber daya yang ada saat ini tanpa biaya tambahan.
 
-#### Harga Khusus
+#### - Harga Khusus
   Penuhi kebutuhan melalui harga khusus. Tersedia untuk proyek bervolume tinggi dengan persyaratn yang unik.
 
-####  AWS Tingkat Gratis
+####  - AWS Tingkat Gratis
   Mendapatkan pengalaman langsung secara gratis dengan platform, produk, dan layanan AWS. Gratis selama 1 tahun untuk pelanggan baru.
 
-#### Layanan tanpa biaya
+#### - Layanan tanpa biaya
   AWS juga menawaran layanan tanpa biaya tambahan.
   - **Amazon Virtual Private Cloud (Amazon VPC)**, menyediakan bagian yang terisolasi dari AWS Cloud secara logis.
   - **AWS Identity and Access Management (IAM)**, mengontrol akses pengguna ke layanan dan sumber daya AWS.
