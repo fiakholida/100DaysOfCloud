@@ -2,7 +2,7 @@
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/fad351af-5608-45d3-af95-6b8dec9e897e)
 
 
-# AWS Cloud Foundations Chapter 2 dan 3 [Pemateri: Tiara Dwi Maulita Sari]
+# CLOUD COMPUTING - Chapter 2 dan 3 [Pemateri: Tiara Dwi Maulita Sari]
 
 ## Introduction
 ## Chapter 2 - Cloud Economics and Billing
@@ -46,11 +46,18 @@
 
   Infrastruktur cloud dibeli dari penyedia layanan yang membangun dan memelihara fasilitas, perangkat keras, serta staf pemeliharaan. Pelanggan membayar sesuai yang digunakan
 
-
-#### 
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
+#### Apa itu Total Biaya Kepemilikan (TCO)?
+  **Total Biaya Kepemilikan (TCO)** adalah perkiraan keuangan untuk membantu mengidentifikasi biaya langsung dan tidak langsung dari suatu sistem. 
+  Digunakan untuk membandingkan biaya menjalankan seluruh lingkungan infrastruktu atau beban kerja spesifik on-premise versus di AWS. Perbandingan ini dilakukan untuk tujuan membuat penganggaran dan membangun kasus bisnis untuk berpindah ke cloud.
+  Beberapa biaya terkait manajemen pusat data meliputi:
+  - biaya server untuk perangkat keras dan perangkatlunak, serta biaya fasilitas untuk menyimpan peralatan.
+  - Biaya penyimpanan untuk perangkat keras, administrasi, dan fasilitas.
+  - Biaya jaringan untuk perangkat keras, administrasi, dan fasilitas.
+  - Selain itu, biaya tenaga kerja IT yang diperlukan untuk mengelola seluruh solusi
+    
+Meskipun terkadang sulit untuk ditentukan, perhitungan biaya internal harus memperhitungkan semua:
+• Biaya langsung yang menyertai pengoperasian server, seperti listrik, ruang lantai, penyimpanan, dan operasi IT untuk mengelola sumber daya tersebut.
+• Biaya tidak langsung untuk menjalankan server, seperti infrastruktur jaringan dan penyimpanan
 ### Step 1 — Summary of Step
 
 ![Screenshot](https://via.placeholder.com/500x300)
