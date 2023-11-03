@@ -82,6 +82,7 @@ Meskipun terkadang sulit untuk ditentukan, perhitungan biaya internal harus memp
   - Mengontrol akses ke layanan AWS
   - Mengautomasi pembuatan dan pengelolaan akun AWS
   - Tagihan terkonsolidasi di beberapa akun AWS
+
 ![th](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/59c13065-9ac4-44dd-87bc-525e22c14ff9)
 
 #### Fitur utama dan manfaat AWS Organizations
