@@ -196,4 +196,15 @@ Meskipun terkadang sulit untuk ditentukan, perhitungan biaya internal harus memp
 
 #### Fitur infrastruktur AWS
 AWS Global Infrastructure memiliki beberapa fitur berharga:
-- Elastis dan sklabilitas. 
+- Elastis dan sklabilitas.
+  - elastis; adaptasi kapasitas yang dinamis
+  - skalabilitas; adaptasi untuk mengakomodasi pertumbuhan
+- Toleransi kesalahan.
+  - terus beroperasi meskipun terjadi kegagalan
+  - redundansi komponen terintegrasi
+- Ketersediaan tinggi.
+  - kinerja operasional tingkat tinggi
+  - pengurangan waktu henti
+  - tanpa campur tangan manusia
+    
+### - Ikhtisar layanan AWS dan kategori layanan
