@@ -27,12 +27,12 @@ We have provided a sample Day Journey entry staring at 0. You can delete this ex
 
 ## Stepping out the door
 
-- [ ] ☁️ 1 > [AWS Cloud Foundation chapter1](Journey/001/Readme.md)
-- [ ] ☁️ 2 > [AWS Cloud Foundation chapter 2 dan 3](Journey/002/Readme.md)
-- [ ] ☁️ 3 > [Lab 1: Introduction to AWS IAM](Journey/003/Readme.md)
-- [ ] ☁️ 4 > [AWS Cloud Foundation chapter 4](Journey/004/Readme.md)
-- [ ] ☁️ 5 > [Lab ](Journey/005/Readme.md)
-- [ ] ☁️ 6 > [](Journey/006/Readme.md)
+- [ ] ☁️ 1 > [AWS Cloud Foundation Chapter1](Journey/001/Readme.md)
+- [ ] ☁️ 2 > [AWS Cloud Foundation Chapter 2 dan 3](Journey/002/Readme.md)
+- [ ] ☁️ 3 > [AWS Cloud Foundation Chapter 4](Journey/003/Readme.md)
+- [ ] ☁️ 4 > [Lab 1: Introduction to AWS IAM](Journey/004/Readme.md)
+- [ ] ☁️ 5 > [AWS Cloud Foundation Chapter 5](Journey/005/Readme.md)
+- [ ] ☁️ 6 > [Lab 2: Build your VPC and Launch a Web Server](Journey/006/Readme.md)
 - [ ] ☁️ 7 > [](Journey/007/Readme.md)
 - [ ] ☁️ 8 > [](Journey/008/Readme.md)
 - [ ] ☁️ 9 > [](Journey/009/Readme.md)
