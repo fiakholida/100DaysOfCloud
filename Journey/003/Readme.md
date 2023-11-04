@@ -9,7 +9,8 @@
 - Mengamankan data di AWS
 - Berupaya Memastikan Kepatuhan
 
-###
+### Model tanggung jawab bersama AWS
+  Keamanan dan kepatuhan merupakan tanggung jawab bersama antara AWS dan pelanggan. AWS mengoperasikan, mengelola, dan mengontrol komponen dari lapisan virtualisasi perangkat lunak ke keamanan fisik fasilitas di mana layanan AWS beroperasi.AWS bertanggung jawabmelindungi infrastruktur yang menjalankan semua layanan yang ditawarkan di AWS Cloud. Infrastruktur ini terdiri atas perangkat keras, perangkat lunak, jaringan, dan fasilitas yang menjalankan layanan AWS Cloud. 
 
 ✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
 
