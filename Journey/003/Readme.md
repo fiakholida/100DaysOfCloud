@@ -1,5 +1,3 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
 
 # CLOUD COMPUTING - AWS Cloud Foundation Chapter 4 [Pemateri: Tiara Dwi Maulita Sari]
 
