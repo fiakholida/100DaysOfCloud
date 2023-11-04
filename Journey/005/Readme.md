@@ -1,8 +1,6 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
 
 # CLOUD COMPUTING - AWS Cloud Foundation Chapter 5 [Pemateri: Tiara Dwi Maulita Sari]
-
+## Chapter 5 - Networking and Content Delivery
 ## Introduction
 
 ✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
