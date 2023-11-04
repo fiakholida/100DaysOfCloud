@@ -2,10 +2,14 @@
 # CLOUD COMPUTING - AWS Cloud Foundation Chapter 4 [Pemateri: Tiara Dwi Maulita Sari]
 ## Chapter 4 - AWS Cloud Security
 ## Introduction
+- Model tanggung jawab bersama AWS
+- AWS Identity Access Management (IAM)
+- Mengamankan akun AWS baru
+- Mengamankan akun
+- Mengamankan data di AWS
+- Berupaya Memastikan Kepatuhan
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
+###
 
 ✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
 
