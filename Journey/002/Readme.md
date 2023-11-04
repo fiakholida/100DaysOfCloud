@@ -1,4 +1,4 @@
-**Add a cover photo like:**
+
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/fad351af-5608-45d3-af95-6b8dec9e897e)
 
 
