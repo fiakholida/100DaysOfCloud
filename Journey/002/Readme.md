@@ -160,10 +160,40 @@ Meskipun terkadang sulit untuk ditentukan, perhitungan biaya internal harus memp
 
 
 
-✍️ Describe what you think you think you want to do next.
+## Chapter 3 - AWS Global Infrastructure Overview
+## Introduction
+- Infrastruktur Global AWS
+- Ikhtisar layanan AWS dan kategori layanan
 
-## Social Proof
+### - Infrastruktur Global AWS
+  **Infrastruktur Global AWS** dirancang dan dibangun untuk memberikan lingkungan cloud computing yang **fleksibel, dapat diandalkan, dan aman** dengan kinerja jaringan global berkualitas tinggi.
+  ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/687aa5f3-eb70-4c5d-89f9-7729b499b58e)
+![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/ce20564b-ab9f-4b1c-b1da-51d6a0f0747e)
+#### Wilayah AWS
+  Infrastruktur AWS Cloud dibangun di sekitar Wilayah. AWS memiliki 22 Wilayah di seluruh dunia. Satu Wilayah AWS adalah lokasi geografis fisik dengan satu atau beberapa Availability Zone. Availability Zone terdiri dari satu atau beberapa pusat data. Untuk mencapai toleransi kesalahan dan stabilitas, Wilayah diisolasi dari satu sama lain. Sumber daya di satu Wilayah tidak secara otomatis direplikasi ke Wilayah lain. Saat menyimpan data di Wilayah tertentu, data Anda tidak direplikasi di luar Wilayah tersebut
+  Wilayah AWS yang diperkenalkan sebelum 20 Maret 2019diaktifkansecara default. Wilayah yang diperkenalkan setelah 20 Maret 2019—seperti Asia Pasifik (Hong Kong) dan Timur Tengah (Bahrain)—dinonaktifkansecara default. Anda harus mengaktifkan Wilayah ini sebelum Anda dapat menggunakannya. Anda dapat menggunakan AWS Management Console untuk mengaktifkan atau menonaktifkan Wilayah. Beberapa wilayah memiliki akses terbatas seperti akun Amazon AWS (Tiongkok) hanya menyediakan akses ke wilayah Beijing dan Ningxia.
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+#### Availability Zone
+  Setiap wilayah memiliki banyak lokasi terisolasi yang dikenal sebagai *Availabilty Zone*. Setiap Availability Zone menyediakan kemampuan untuk mengoperasikan aplikasi dan basis data yang tersedia dengan sangat baik, toleran terhadap kesalahan, dan dapat diskalakan daripada yang mungkin dilakukan dengan satu pusat data. Availability Zone merupakan partisi Infrastruktur Global AWS yang terisolasi penuh. Availability Zone memiliki infrastruktur daya tersendiri, dan secara fisik berjarak sangat jauh dari Availability Zone lainnya—tetapi semua Availability Zone berjarak 100 km satu sama lain.
 
-[link](link)
+#### Pusat Data AWS
+- Pusat data AWS dirancang demi keamanan.
+- Pusat data adalah tempat data berada dan pemrosesan data terjadi.
+- Setiap pusat data memiliki daya, jaringan, dan konektivitas berlebih, dan ditempatkan di fasilitas yang terpisah.
+- Pusat data biasanya memiliki 50.000 sampai 80.000 server fisik.
+  Dasar untuk infrastruktur AWS adalah pusat data. Pelanggan tidak menentukan pusat data untuk deployment sumber daya. Sebaliknya, Availability Zone adalah tingkat spesifikasi paling granular yang dapat dibuat pelanggan. Namun, pusat data adalah lokasi tempat data aktual berada. Amazon mengoperasikan pusat data mutakhir yang tersedia dengan sangat baik. Meskipun jarang, kegagalan yang memengaruhi ketersediaan instans di lokasi yang sama dapat terjadi. Jika Anda meng-host semua instans Anda di satu lokasi yang terpengaruh oleh kegagalan tersebut, tidak ada instans Anda yang akan tersedia. AWS menggunakan peralatan jaringan khusus yang bersumber dari beberapa Produsen Perangkat Asli yang juga dikenal sebagai ODM. ODM merancang dan membuat produk berdasarkan spesifikasi dari perusahaan kedua. Perusahaan kedua kemudian mengubah merek produk untuk dijual.
+
+#### Point of Presence
+![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/c1806a07-5c95-4175-a05d-6c34316b8c65)
+
+- AWS menyediakan jaringan global 187 lokasi Point of Presence
+- Terdiri dari 176 edge location ddan 11 Cache edge Regional
+- Digunakan dengan Amazon CloudFront
+- Cache edge Regional digunakan untuk konten dengan akses jarang
+  **Amazon CloudFront** adalah jaringan penyampaian konten(CDN) yang digunakan untuk mendistribusikan konten ke pengguna akhir untuk mengurangi latensi. Amazon Route 53 adalah layanan Domain Name System (DNS). Permintaan ke salah satu layanan ini akan dialihkan ke edge locationterdekat secara otomatis untuk menurunkan latensi.
+  Points of Presence AWS terleta kdi sebagian besar kota besar di (total 69 kota) di 30 negaradi seluruh dunia. Dengan terus mengukur konektivitas internet, kinerja, dan komputasi untuk menemukan cara terbaik untuk merutekan permintaan, Points of Presence memberikan pengalaman pengguna yang lebih baik hampir secara real-time. Titik kehadiran ini digunakan oleh banyak layanan AWS, termasuk layanan Amazon CloudFront, Amazon Route 53, AWS Shield, dan AWS Web Application Firewall (AWS WAF).
+  Cache Edge Wilayahl digunakan secara default dengan Amazon CloudFront. Cache edge regional digunakan saat Anda memiliki konten yang tidak cukup sering diakses untuk tetap berada di edge location.
+
+#### Fitur infrastruktur AWS
+AWS Global Infrastructure memiliki beberapa fitur berharga:
+- Elastis dan sklabilitas. 
