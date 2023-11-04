@@ -1,6 +1,6 @@
 
 
-# AWS Cloud Foundation Chapter 1 [Pemateri: Tiara Dwi Maulita Sari]
+# CLOUD COMPUTING - AWS Cloud Foundation Chapter 1 [Pemateri: Tiara Dwi Maulita Sari]
 
 ## Introduction
 1. Pengertian Cloud computing?
