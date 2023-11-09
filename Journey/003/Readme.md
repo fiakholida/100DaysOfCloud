@@ -63,11 +63,9 @@ Melindungi infrastruktur merupakan prioritas utama untuk AWS.
   Pilihan untuk membuat token autentikasi MFA mencakup aplikasi yang kompatibel dengan MFA virtual(seperti Google Authenticator atau Authy 2-Factor Authentication), perangkat kunci keamanan U2F, dan perangkat MFA perangkat keras.
 
 #### Otorisasi tindakan apa saja yang diizinkan
-  Otorisasiadalah proses menentukan izinapa yang harus diberikan oleh pengguna, layanan, atau aplikasi. Setelah penggunadiautentikasi, mereka harus diotorisasi untuk dapat mengakses layanan AWS. pengguna IAM tidak memiliki izin untuk mengakses sumber daya atau data apa pun di akun AWS. Sebaliknya, Anda harus secara eksplisit memberikan izin kepada pengguna, grup, atau peran dengan membuatkebijakan,yang merupakan dokumen dalam format JavaScript Object Notation (JSON). Kebijakan daftar izin yang memungkinkanatau memblokir akses ke sumber daya di akun AWS.
+  Otorisasi adalah proses menentukan izinapa yang harus diberikan oleh pengguna, layanan, atau aplikasi. Setelah pengguna diautentikasi, mereka harus diotorisasi untuk dapat mengakses layanan AWS. Pengguna IAM tidak memiliki izin untuk mengakses sumber daya atau data apa pun di akun AWS. Sebaliknya, Anda harus secara eksplisit memberikan izin kepada pengguna, grup, atau peran dengan membuatkebijakan,yang merupakan dokumen dalam format JavaScript Object Notation (JSON). Kebijakan daftar izin yang memungkinkanatau memblokir akses ke sumber daya di akun AWS.
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
+#### IAM: Otorisasi
 
 ✍️ Describe what you think you think you want to do next.
 
