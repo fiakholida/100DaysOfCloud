@@ -8,7 +8,7 @@
 - Mengamankan data di AWS
 - Berupaya Memastikan Kepatuhan
 
-### - Model tanggung jawab bersama AWS
+## - Model tanggung jawab bersama AWS
   Keamanan dan kepatuhan merupakan tanggung jawab bersama antara **AWS** dan **pelanggan**. **AWS** mengoperasikan, mengelola, dan mengontrol komponen dari lapisan virtualisasi perangkat lunak ke keamanan fisik fasilitas di mana layanan AWS beroperasi. AWS bertanggung jawab melindungi infrastruktur yang menjalankan semua layanan yang ditawarkan di AWS Cloud. Infrastruktur ini terdiri atas perangkat keras, perangkat lunak, jaringan, dan fasilitas yang menjalankan layanan AWS Cloud. 
   **Pelanggan** bertanggung jawab atas enkripsi data saat istirahat dan data dalam transit. Pelanggan juga harus memastikan bahwa jaringan dikonfigurasi untuk keamanan dan kredensial keamanan dan login dikelola dengan aman. Juga bertanggung jawab atas konfigurasi grup keamanan dan konfigurasi sistem operasi yang berjalan pada instans komputasi yang mereka lunucurkan.
 
@@ -48,7 +48,7 @@ Melindungi infrastruktur merupakan prioritas utama untuk AWS.
   - Pelanggan tidak perlu mengelola infrastruktur yang mendukung layanan
     
 
-### - AWS Identity and Access Management (IAM)
+## - AWS Identity and Access Management (IAM)
   AWS Identity and Access Management (IAM) memungkinkan Anda mengontrol akses ke komputasi, penyimpanan, basis data, dan layanan aplikasi di AWS Cloud. IAM dapat digunakan untuk menangani autentikasi, dan untuk menentukan dan menegakkan kebijakan otorisasi sehingga Anda dapat menentukan pengguna yang dapat mengakses layanan.
   IAM adalah alat yang secara terpusat mengelola akses untuk meluncurkan, mengonfigurasi, mengelola, dan mengakhiri sumber daya di akun AWS Anda. Ini memberikan kontrol detail atas akses ke sumber daya, termasuk kemampuan untuk menentukan dengan tepat panggilan API mana yang diizinkan untuk dilakukan pengguna ke setiap layanan.
   Dengan IAM, Anda dapat mengelola sumber daya yangdapat diakses oleh siapa, dan bagaimanasumber daya ini dapat diakses. Anda dapat memberikan izin yang berbeda kepada orang yang berbeda untuk sumber daya yang berbeda. Misalnya, Anda mungkin mengizinkan beberapa pengguna akses penuh ke Amazon EC2, Amazon S3, Amazon DynamoDB, Amazon Redshift, dan layanan AWS lainnya. Namun, untuk pengguna lain, Anda mungkin hanya mengizinkan akses hanya-baca ke beberapa bucket S3. Juga memebrikan izin kepada pengguna lain untuk hanya mengelola instance EC2.
@@ -66,11 +66,34 @@ Melindungi infrastruktur merupakan prioritas utama untuk AWS.
   Otorisasi adalah proses menentukan izinapa yang harus diberikan oleh pengguna, layanan, atau aplikasi. Setelah pengguna diautentikasi, mereka harus diotorisasi untuk dapat mengakses layanan AWS. Pengguna IAM tidak memiliki izin untuk mengakses sumber daya atau data apa pun di akun AWS. Sebaliknya, Anda harus secara eksplisit memberikan izin kepada pengguna, grup, atau peran dengan membuatkebijakan,yang merupakan dokumen dalam format JavaScript Object Notation (JSON). Kebijakan daftar izin yang memungkinkanatau memblokir akses ke sumber daya di akun AWS.
 
 #### IAM: Otorisasi
+  Menetapkan izin kepada pengguna, grup, atau peran dengan membuat kebijakan IAM (atau menemukan kebijakan yang ada di akun). Tidak ada izin default, smua tindakan dalam akun ditolak untuk pengguna secara default (pemblokiran implisit) kecuali tindakan tersebut diizinkan secara eksplisit. Tindakan apapun yang tidak diizinkan secara eksplisit akan ditolak.
 
-✍️ Describe what you think you think you want to do next.
+#### Kebijakan IAM
+  Kebijakan IAM adalah dokumen yang mendefinisikan isin yang memberikan kontrol akses ketat.
+Ada 2 jenis kebijakan, yaitu: **berbasis identitas** dan **berbasis sumber daya**.
+- **Kebijakan berbasis identitas**, yang dilampirkan pada pelaku (atau identitas), seperti pengguna, peran, atau grup IAM. Kebijakan ini mengontrol tindakan apa yang dapat dilakukan identittas, pada sumber daya apa, dan dalam kondisi apa. Kebijakan identitas dapat dikategorikan lebih lanjut sebagai:
+    - Kebijakan terkelola, kebijakan berbasis ientittas yang mandiri yang dapat diapmirkan pada beberapa pengguna, grup, dan peran dalam akun AWS.
+    - Kebijakan inline, kebijakan yang dibuat dan kelola, dan yang tertaman secara langsung dalam grup atau peran pengguna tunggal.
+- **Kebijakan berbasis sumber daya**,  yang dilampirkan pada sumber daya, seperti bucket Amazon S3. Kebijakan ini menentukan siapa yang dapat mengakses sumber daya dan tindakan apa yang dapat mereka lakukan padanya. Ditentukan sebagai **inline** saja, yang berarti bahwa kita menentukan kebijakan pada sumber daya itu sendiri, bukan membuat dokumen kebijakan IAM terpisah yang dilampirkan. 
 
-## Social Proof
+#### Grup IAM
+  Grup IAM adalah kumpulan pengguna IAM, digunakan untuk memberikan izin yang sama untuk beberapa pengguna, yang mempermudah pengelolaan izin ysng diberikan dengan melampirkan kebijakan atau kebijakan IAM ke grup. Karakteristik grup IAM:
+  - dapat berisi banyak user, dan user dapat menjadi milik beberapa grup
+  - grup tidak dapat ditumpuk, hanya dapat berisi user dan tidak dapat beriis grup lain.
+  - tidak ada grup default yang secara oomatis menackup semua user di akun AWS.
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+#### IAM role
+  IAM role adalah identitas IAM dengan izin khusus. IAM role dapat memiliki kebijakan izin yang melekat padanya, dan dapat digunakan untuk mendelegasikan akses sementara kepada pengguna atau aplikasi. IAM role mirip dengan pengguna IAM, yang dapat melampirkan kebijakan izinnya. IAM role berbeda dari pengguna IAM, yang tidak terkait secara khusu dengan satu orang dan ditujukan untuk dapat diasumsikan oleh orang, aplikasi, atau layanan. Dapat menggunakan peran yang menyeiakan kredensial keamanan sementara.
 
+## - Mengamankan akun AWS baru
+  Cara terbaik untuk mengamankan akun AWS:
+- Amankan  login dengan otentikasi multifaktor (MFA).
+- Hapus access key pengguna root akun.
+- Membuat pengguna IAM individu dan memberikan izin sesuai dengan prinsip hak istimewa paling minim.
+- Gunakan grup untuk menetapkan izin kepada pengguna IAM.
+- Mengonfigurasi kebijakan kata sandi yang kuat.
+- Delegasikan penggunaan peran, alih-alih pembagian kredensial.
+- Pantau aktivitas akun menggunakan AWS CloudTrail.
+
+## - 
 [link](link)
