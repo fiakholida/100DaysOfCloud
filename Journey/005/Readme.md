@@ -26,7 +26,7 @@
 ## - Amazon VPC
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/e1f3dced-c3d9-4a9e-8580-24136fb0df61)
   Amazon Virtual Private Cloud (VPC) adalah layanan yang memungkinkan menyediakan bagian yang terisolasi secara logis dari AWS Cloud tempat kalian dapat meluncurkan sumber daya AWS pada jaringan virtual yang di tentukan.
-  Amazon VPC memberikan kontrol atas sumber daya jaringan virtual, termasuk pemilihan rentang alamat IP, pembuatan subnet, serta konfigurasi tabel rute dan gateway jaringan. 
+  Amazon VPC memberikan kontrol atas sumber daya jaringan virtual, termasuk pemilihan rentang alamat IP, pembuatan subnet, serta konfigurasi tabel rute dan gateway jaringan. Memungkinkan kustomisasi konfigurasi jaringan untuk VPC. Juga dapat menggunakan beberapa lapis keamanan untuk mengontrol akses ke instans Amazon Elastic Compute Cloud (Amazon EC2) dalam setiap subnet.
 
 
 [link](link)
