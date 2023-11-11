@@ -64,5 +64,24 @@ Alamat IP elastis
   - Dapat dialokasikan dan dipetakan ulang kapan saja
   - Biaya tambahan mungkin berlaku
 ### Antarmuka jaringan elastis
-Antarmuka jaringan elastis adalah antarmuka jaringan virtual yang dapat di lampirkan ke sebuah instans, dan juga dilepaskan dari instans
+  Antarmuka jaringan elastis adalah antarmuka jaringan virtual yang dapat di lampirkan ke sebuah instans, juga dilepaskan dari instans dan dilampirkan ke instans lain untuk mengarahkan lalu lintas jaringan.
+  Setiap instans dalam VPC memliki antarmuka jaringan default yang ditetapkan alamat IPv4 pribadi dari rentang alamat IPv4 dari VPC, tidak dapat melepaskan antarmuka jaringan utama dari instans tetapi dapat membuat dan melampirkan antarmuka jaringan tambahan untuk setiap instans di VPC.
+
+### Tabel rute dan rute
+  Tabel rute berisi sekumpulan aturan (atau rute) yang dapat dikonfigurasikan untuk mengarahkan lalu lintas jaringan dari subnet. Setiap rute menentukan tujuan dan target. Secara default, setiap tabel rute berisi rute lokal untuk komunikasi di dalam VPC. Setiap subnet dalam VPC harus diasosiasikan dengan tabel rute (maks 1).
+
+## Jaringan VPC
+### Gateway Internet
+  gateway internet adalah komponen VPC yang dapat diskalakan, redundan, dan tersedia dengan sangat baik yang memungkinkan komunikasi antara instans di VPC dan internet. Gateway internet memiliki dua tujuan: untuk memberikan target dalam tabel rute VPC Anda untuk lalu lintas yang dapat dirutekan internet, dan untuk melakukan penerjemahan alamat jaringan untuk instans yang telah ditetapkan alamat IPv4 publik.
+### Gateway network address translation (NAT)
+  Gatewaynetwork address translation (NAT)  memungkinkan instans dalam subnet privat untuk terhubung ke internet atau layanan AWS lainnya, tetapi mencegah internet untuk memulai koneksi dengan instans.
+  Untuk membuat gateway NAT, Anda harus menentukan subnet publik di mana gateway NAT seharusnya berada. Anda juga harus menentukan alamat IP Elastis untuk mengaitkannya dengan gateway NAT saat Anda membuatnya. Setelah Anda membuat gateway NAT, Anda harus memperbarui tabel rute yang terkait dengan satu atau lebih subnet privat Anda untuk mengarahkan lalu lintas yang terikat internet ke gateway NAT. Dengan demikian, instans di subnet privat Anda dapat berkomunikasi dengan internet.
+### Berbagi  VPC
+  Berbagi VPC memungkinkan pelanggan berbagi subnet dengan akun AWS lainnya dalam organisasi yang sama di AWS Organizations. Berbagi VPC memungkinkan beberapa akun AWS untuk membuat sumber daya aplikasi mereka -seperti Amazon EC2 instance, basis data Amazon Relational Database Service (Amazon RDS), kluster Amazon Redshift, dan fungsi AWS Lambda—ke dalam VPC bersama yang dikelola secara terpusat. Berbagi VPC menawarkan beberapa manfaat:
+  - Pemisahan tugas, struktur VPC yang dikendalikan secara terpussat, perutean, alokasi alamat IP
+  - Kepemilikan, pemilik apk terus memiliki sumber daya, akun, dan grup keamanan.
+  - Grup keamanan, peserta berbagi VPC dapat mereferensikan ID grup keamanan satu sama lain
+  - Efisiensi, Kepadatan yang lebih tinggi di subnet, penggunaan VPN dan AWS Direct Connect
+  - Tanpa batas langsung, batas langsung dapat dihindari, misal 50 antarmuka virtual per koneksi AWS Direct Connect melalui arsitektur jaringan yang disederhanakan
+  - Pengoptimalan biaya -Biaya dapat dioptimalkan melalui penggunaan kembali gateway NAT, endpoint antarmuka VPC, dan lalu lintas antar-Availability Zone
 [link](link)
