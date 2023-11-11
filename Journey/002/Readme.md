@@ -15,7 +15,7 @@
 ### - Dasar-dasar harga
 
 #### Model harga AWS
-  Ada tiga pendorong dasar biaya dengan AWS, yaitu: **KOmputasi, Penyimpanan, Transfer data keluar**. Untuk karakteristikny bervariasi, tergantung produk AWS dan model harga yang dipilih.
+  Ada tiga pendorong dasar biaya dengan AWS, yaitu: **Komputasi, Penyimpanan, Transfer data keluar**. Untuk karakteristikny bervariasi, tergantung produk AWS dan model harga yang dipilih.
 - Komputasi: dikenai biaya per jam/detik, bervariasi sesuai tie instans
 - Peyimpanan: biasanya dikenai biaya per GB
 - Transfer data keluar: data keluar dijumlahkan dan dikenai biaya, data masuk tidak dikenai biaya, biasanya dikenai biaya per GB. Untuk transfer data keluar dijumlahkan di seluruh layanan kemudian dibebankan pada tarif transfer data kelar. Biaya ini akan terlihat pada laporan bulanan sebagai AWS Data Transfer Out.
