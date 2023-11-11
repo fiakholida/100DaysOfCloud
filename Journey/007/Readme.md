@@ -1,7 +1,4 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# Chapter 6 - Compute 
+# CLOUD COMPUTING - AWS Cloud Foundationn Chapter 6 - Compute   [Pemateri: Tiara Dwi Maulita Sari]
 
 ## Introduction
 
