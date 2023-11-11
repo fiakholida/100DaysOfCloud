@@ -28,5 +28,41 @@
   Amazon Virtual Private Cloud (VPC) adalah layanan yang memungkinkan menyediakan bagian yang terisolasi secara logis dari AWS Cloud tempat kalian dapat meluncurkan sumber daya AWS pada jaringan virtual yang di tentukan.
   Amazon VPC memberikan kontrol atas sumber daya jaringan virtual, termasuk pemilihan rentang alamat IP, pembuatan subnet, serta konfigurasi tabel rute dan gateway jaringan. Memungkinkan kustomisasi konfigurasi jaringan untuk VPC. Juga dapat menggunakan beberapa lapis keamanan untuk mengontrol akses ke instans Amazon Elastic Compute Cloud (Amazon EC2) dalam setiap subnet.
 
+### VPC & Subnet
+  - VPC
+    - Terisolasi secara logis dari VPC lain
+    - Didedikasikan untuk akun AWS
+    - Bagian dari satu Wilayah AWS dan dapat menjangkau beberapa Availabilit Zone
+  - Subnet
+    - Rentang alamat IP yang membagi VPC
+    - Bagian dari satu Availability Zone
+    - Diklasifikasikan sebagai publik atau privat
 
+### Pemberian alamat IP
+  - Menetapkan ke blok CIDR IPv4 (rentang alamat IPv4 privat)
+  - Tidak dapat mengubah rentang alamat setelah membuat VPC
+  - Ukuran blok CIDR IPv4 terbesar yaitu /16
+  - Ukuran blok CIDR IPv4 terkecil yaitu /28
+  - IPv6 juga didukung (dengan batas ukuran blok yang berbeda)
+  - Blok CIDR subnet tidak dapat tumpang tindih
+
+### Alamat IP yang dicadangkan
+AWS mencadangkan alamat IP untuk:
+- Alamat jaringan
+- Perute lokal VPC (komunikasi internal)
+- Resolusi Domain Name System (DNS)
+- Penggunaan di masa mendatang
+- Alamat siaran jaringan
+
+### Jenis alamat IP publik
+Alamat IPv4 publik
+- Ditetapkan secara manual melalui alamat IP Elastis
+- Ditetapkan secara otomatis melalui pengaturan penetapan alamat IP publik otomatis di tingkat subnet
+
+Alamat IP elastis
+  - Berkaitan dengan akun AWS
+  - Dapat dialokasikan dan dipetakan ulang kapan saja
+  - Biaya tambahan mungkin berlaku
+### Antarmuka jaringan elastis
+Antarmuka jaringan elastis adalah antarmuka jaringan virtual yang dapat di lampirkan ke sebuah instans, dan juga dilepaskan dari instans
 [link](link)
