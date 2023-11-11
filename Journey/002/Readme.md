@@ -166,25 +166,25 @@ Meskipun terkadang sulit untuk ditentukan, perhitungan biaya internal harus memp
 - Infrastruktur Global AWS
 - Ikhtisar layanan AWS dan kategori layanan
 
-### - Infrastruktur Global AWS
+## - Infrastruktur Global AWS
   **Infrastruktur Global AWS** dirancang dan dibangun untuk memberikan lingkungan cloud computing yang **fleksibel, dapat diandalkan, dan aman** dengan kinerja jaringan global berkualitas tinggi.
   ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/687aa5f3-eb70-4c5d-89f9-7729b499b58e)
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/ce20564b-ab9f-4b1c-b1da-51d6a0f0747e)
-#### Wilayah AWS
+### Wilayah AWS
   Infrastruktur AWS Cloud dibangun di sekitar Wilayah. AWS memiliki 22 Wilayah di seluruh dunia. Satu Wilayah AWS adalah lokasi geografis fisik dengan satu atau beberapa Availability Zone. Availability Zone terdiri dari satu atau beberapa pusat data. Untuk mencapai toleransi kesalahan dan stabilitas, Wilayah diisolasi dari satu sama lain. Sumber daya di satu Wilayah tidak secara otomatis direplikasi ke Wilayah lain. Saat menyimpan data di Wilayah tertentu, data Anda tidak direplikasi di luar Wilayah tersebut
   Wilayah AWS yang diperkenalkan sebelum 20 Maret 2019diaktifkansecara default. Wilayah yang diperkenalkan setelah 20 Maret 2019—seperti Asia Pasifik (Hong Kong) dan Timur Tengah (Bahrain)—dinonaktifkansecara default. Anda harus mengaktifkan Wilayah ini sebelum Anda dapat menggunakannya. Anda dapat menggunakan AWS Management Console untuk mengaktifkan atau menonaktifkan Wilayah. Beberapa wilayah memiliki akses terbatas seperti akun Amazon AWS (Tiongkok) hanya menyediakan akses ke wilayah Beijing dan Ningxia.
 
-#### Availability Zone
+### Availability Zone
   Setiap wilayah memiliki banyak lokasi terisolasi yang dikenal sebagai *Availabilty Zone*. Setiap Availability Zone menyediakan kemampuan untuk mengoperasikan aplikasi dan basis data yang tersedia dengan sangat baik, toleran terhadap kesalahan, dan dapat diskalakan daripada yang mungkin dilakukan dengan satu pusat data. Availability Zone merupakan partisi Infrastruktur Global AWS yang terisolasi penuh. Availability Zone memiliki infrastruktur daya tersendiri, dan secara fisik berjarak sangat jauh dari Availability Zone lainnya—tetapi semua Availability Zone berjarak 100 km satu sama lain.
 
-#### Pusat Data AWS
+### Pusat Data AWS
 - Pusat data AWS dirancang demi keamanan.
 - Pusat data adalah tempat data berada dan pemrosesan data terjadi.
 - Setiap pusat data memiliki daya, jaringan, dan konektivitas berlebih, dan ditempatkan di fasilitas yang terpisah.
 - Pusat data biasanya memiliki 50.000 sampai 80.000 server fisik.
   Dasar untuk infrastruktur AWS adalah pusat data. Pelanggan tidak menentukan pusat data untuk deployment sumber daya. Sebaliknya, Availability Zone adalah tingkat spesifikasi paling granular yang dapat dibuat pelanggan. Namun, pusat data adalah lokasi tempat data aktual berada. Amazon mengoperasikan pusat data mutakhir yang tersedia dengan sangat baik. Meskipun jarang, kegagalan yang memengaruhi ketersediaan instans di lokasi yang sama dapat terjadi. Jika Anda meng-host semua instans Anda di satu lokasi yang terpengaruh oleh kegagalan tersebut, tidak ada instans Anda yang akan tersedia. AWS menggunakan peralatan jaringan khusus yang bersumber dari beberapa Produsen Perangkat Asli yang juga dikenal sebagai ODM. ODM merancang dan membuat produk berdasarkan spesifikasi dari perusahaan kedua. Perusahaan kedua kemudian mengubah merek produk untuk dijual.
 
-#### Point of Presence
+### Point of Presence
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/c1806a07-5c95-4175-a05d-6c34316b8c65)
 
 - AWS menyediakan jaringan global 187 lokasi Point of Presence
@@ -195,7 +195,7 @@ Meskipun terkadang sulit untuk ditentukan, perhitungan biaya internal harus memp
   Points of Presence AWS terleta kdi sebagian besar kota besar di (total 69 kota) di 30 negaradi seluruh dunia. Dengan terus mengukur konektivitas internet, kinerja, dan komputasi untuk menemukan cara terbaik untuk merutekan permintaan, Points of Presence memberikan pengalaman pengguna yang lebih baik hampir secara real-time. Titik kehadiran ini digunakan oleh banyak layanan AWS, termasuk layanan Amazon CloudFront, Amazon Route 53, AWS Shield, dan AWS Web Application Firewall (AWS WAF).
   Cache Edge Wilayahl digunakan secara default dengan Amazon CloudFront. Cache edge regional digunakan saat Anda memiliki konten yang tidak cukup sering diakses untuk tetap berada di edge location.
 
-#### Fitur infrastruktur AWS
+### Fitur infrastruktur AWS
 AWS Global Infrastructure memiliki beberapa fitur berharga:
 - Elastis dan sklabilitas.
   - elastis; adaptasi kapasitas yang dinamis
@@ -208,16 +208,16 @@ AWS Global Infrastructure memiliki beberapa fitur berharga:
   - pengurangan waktu henti
   - tanpa campur tangan manusia
     
-### - Ikhtisar layanan AWS dan kategori layanan
-#### Layanan dasar AWS
+## - Ikhtisar layanan AWS dan kategori layanan
+### Layanan dasar AWS
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/d866dc69-e728-4821-b8d8-91b517ba34d6)
 Seperti yang dibahas sebelumnya, Infrastruktur Global AWS dapat dibagi menjadi tiga elemen: Wilayah, Availability Zone, dan Points of Presence, yang disertai edge location. Infrastruktur ini menyediakan platform untuk serangkaian layanan yang luas, seperti jaringan, penyimpanan, layanan komputasi, dan basis data—serta layanan ini dikirimkan sebagai utilitas sesuai permintaan yang tersedia dalam hitungan detik, dengan harga sesuai pemakaian.
 
-#### Kategori layanan AWS
+### Kategori layanan AWS
   ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/e078f95c-1a96-4b0b-bb64-d522165a5de0)
   AWS menawarkan serangkaian layanan berbasis cloud. Ada 23 kategori produk atau layanan yang berbeda, dan masing-masing kategori terdiri dari satu atau beberapa layanan. Kursus ini tidak akan mencoba untuk memperkenalkan Anda ke setiap layanan. Sebaliknya, fokus dari kursus ini adalah pada layanan yang paling banyak digunakan dan menawarkan pengenalan terbaik ke AWS Cloud. Kursus ini juga berfokus pada layanan yang kemungkinan besar akan dibahas dalam ujian AWS Certified Cloud Practitioner.
 
-#### Kategori layanan penyimpanan
+### Kategori layanan penyimpanan
   ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/c2c20bc2-e2d0-4e76-92b1-490afea91db6)
 
 - Amazon Simple Storage Service (Amazon S3) adalah layanan penyimpanan objek yang menawarkan skalabilitas, ketersediaan data, keamanan, dan kinerja. Gunakan layanan ini untuk menyimpan dan melindungi sejumlah data untuk situs web, aplikasi seluler, pencadangan dan pemulihan, arsip, aplikasi perusahaan, perangkat Internet of Things (IoT), dan analitik big data
@@ -225,7 +225,7 @@ Seperti yang dibahas sebelumnya, Infrastruktur Global AWS dapat dibagi menjadi t
 - Amazon Elastic File System (Amazon EFS)menyediakan Sistem File Jaringan (NFS) elastis, dapat diskalakan, dan terkelola sepenuhnya untuk digunakan dengan layanan AWS Cloud dan sumber daya on-premise. Amazon EFS dibuat untuk menskalakan sesuai permintaan hingga petabyte, tumbuh dan menyusut secara otomatis ketika Anda menambahkan dan menghapus file. Layanan ini mengurangi kebutuhan untuk menyediakan dan mengelola kapasitas guna mengakomodasi pertumbuhan
 - Amazon Simple Storage Services Glacieradalah kelas penyimpanan cloud Amazon S3 yang aman, tahan lama, dan berbiaya sangat rendah untuk pengarsipan data dan pencadangan jangka panjang. Dirancang untuk memberikan daya tahan sebesar 99,999999999%, dan untuk menyediakan kemampuan keamanan dan kepatuhan menyeluruh untuk memenuhi persyaratan hukum yang paling ketat.
 
-#### Kategori layanan komputasi
+### Kategori layanan komputasi
   ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/a228d1c4-9399-4253-8daf-e817d84bbc43)
 
 - Amazon Elastic Compute cloud (Amazon EC2) menyediakan kapasitas komputasi yang aman dan fleksibel sebagai mesin virtual di cloud.
@@ -237,13 +237,13 @@ Seperti yang dibahas sebelumnya, Infrastruktur Global AWS dapat dibagi menjadi t
 - Amazon Elastic Kubernetes Service (Amazon EKS) memudahkan untuk men-deploy, mengelola, dan menskalakan aplikasi dalam kontainer yang menggunakan Kubernetes di AWS.
 - AWS Fargate adalah mesin komputasi untuk Amazon ECS yang memungkinkan Anda menjalankan kontainer tanpa harus mengelola server atau kluster
 
-#### Kategori layanan basis data
+### Kategori layanan basis data
 - Amazon Relational Database Service (Amazon RDS)memudahkan penyiapan, pengoperasian, dan penskalaan basis data relasional di cloud.
 - Amazon Auroraadalah basis data relasional yang kompatibel dengan MySQL dan PostgreSQL.
 - Amazon Redshift memungkinkan Anda menjalankan pertanyaan analitik terhadap data berjumlah petabyte yang disimpan secara lokal di Amazon Redshift, dan langsung terhadap data berjumlah exabyte yang disimpan di Amazon S3.
 - Amazon DynamoDB adalah basis data nilai kunci dan dokumen yang memberikan kinerja milidetik satu digit pada skala apa pun, dengan keamanan bawaan, pencadangan dan pemulihan, serta cache dalam memori.
 
-#### Kategori layanan jaringan dan penyampaian konten
+### Kategori layanan jaringan dan penyampaian konten
 - Amazon Virtual Private Cloud (Amazon VPC) memungkinkan Anda menyediakan bagian yang terisolasi secara logis dari AWS Cloud.
 - Elastic Load Balancing secara otomatis mendistribusikan lalu lintas aplikasi yang masuk di beberapa target, seperti Amazon EC2 instance, kontainer, alamat IP, dan fungsi Lambda.
 - Amazon CloudFront adalah layanan jaringan penyampaian konten (CDN) cepat yang memberikan data, video, aplikasi, dan antarmuka pemrograman aplikasi (API) dengan aman kepada pelanggan secara global dengan latensi rendah dan kecepatan transfer tinggi.
@@ -252,7 +252,7 @@ Seperti yang dibahas sebelumnya, Infrastruktur Global AWS dapat dibagi menjadi t
 - AWS Direct Connect menyediakan cara untuk membuat koneksi jaringan pribadi khusus dari pusat data atau kantor Anda ke AWS, yang dapat mengurangi biaya jaringan dan meningkatkan throughput bandwidth.
 - AWS VPN menyediakan terowongan pribadi yang aman dari jaringan atau perangkat Anda ke jaringan global AWS.
 
-#### Kategori layanan keamanan, identitas, dan kepatuhan
+### Kategori layanan keamanan, identitas, dan kepatuhan
 - AWS Identity and Access Management (IAM)memungkinkan Anda mengelola akses layanan dan sumber daya AWS secara aman. Dengan menggunakan IAM, Anda dapat membuat dan mengelola pengguna dan grup AWS. Anda dapat menggunakan izin IAM untuk mengizinkan dan menolak akses pengguna dan grup ke sumber daya AWS.
 - AWS Organizations memungkinkan Anda membatasi layanan dan tindakan apa yang diizinkan di akun Anda.
 - Amazon Cognito memungkinkan Anda menambahkan fungsi daftar, masuk, dan kontrol akses pengguna ke aplikasi web dan seluler Anda.
@@ -260,12 +260,12 @@ Seperti yang dibahas sebelumnya, Infrastruktur Global AWS dapat dibagi menjadi t
 - AWS Key Management Service (AWS KMS) memungkinkan Anda membuat dan mengelola kunci. Anda dapat menggunakan AWS KMS untuk mengontrol penggunaan enkripsi di berbagai layanan AWS dan di aplikasi Anda.
 - AWS Shield adalah layanan perlindungan Distributed Denial of Service (DDoS) terkelola yang melindungi aplikasi yang berjalan di AWS.
 
-#### Kategori layanan manajemen biaya AWS
+### Kategori layanan manajemen biaya AWS
 - Laporan Penggunaan dan Biaya AWS berisi kumpulan data biaya dan penggunaan AWS terlengkap yang tersedia, termasuk metadata tambahan tentang layanan, harga, dan reservasi AWS.
 - AWS Budgets memungkinkan Anda mengatur anggaran kustom yang akan memberi Anda peringatan saat biaya atau penggunaan Anda melebihi (atau diprakirakan akan melebihi) jumlah yang Anda anggarkan.
 - AWS Cost Explorer memiliki antarmuka yang mudah digunakan yang memungkinkan Anda memvisualisasikan, memahami, serta mengelola biaya dan penggunaan AWS Anda dari waktu ke waktu.
 
-#### Kategori layanan manajemen dan tata kelola
+### Kategori layanan manajemen dan tata kelola
 - AWS Management Console memberikan antarmuka pengguna berbasis web untuk mengakses akun AWS Anda.
 - AWS Config menyediakan layanan yang membantu Anda melacak inventaris dan perubahan sumber daya.
 - Amazon CloudWatch memungkinkan Anda memantau sumber daya dan aplikasi.AWS Auto Scaling menyediakan fitur yang memungkinkan Anda menskalakan beberapa sumber daya untuk memenuhi permintaan.
@@ -273,3 +273,6 @@ Seperti yang dibahas sebelumnya, Infrastruktur Global AWS dapat dibagi menjadi t
 - AWS Trusted Advisor membantu Anda mengoptimalkan kinerja dan keamanan.
 - AWS Well-Architected Tool menyediakan bantuan dalam meninjau dan meningkatkan beban kerja Anda.
 - AWS CloudTrail melacak aktivitas pengguna dan penggunaan API.
+
+## Knowledge Chapter 3
+![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/2649cc5e-6fff-4e2a-b3bc-fdb7f85ee1e8)
