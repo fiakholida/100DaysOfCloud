@@ -95,7 +95,9 @@ Ada 2 jenis kebijakan, yaitu: **berbasis identitas** dan **berbasis sumber daya*
 - Delegasikan penggunaan peran, alih-alih pembagian kredensial.
 - Pantau aktivitas akun menggunakan AWS CloudTrail.
 
-## - 
+## - Mengamankan data di AWS
+## - Berupaya Memastikan Kepatuhan
+
 [link](link)
 
 ## Knowledge Chapter 4
