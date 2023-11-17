@@ -99,4 +99,5 @@ Ada 2 jenis kebijakan, yaitu: **berbasis identitas** dan **berbasis sumber daya*
 [link](link)
 
 ## Knowledge Chapter 4
-![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/b2849c9d-8bdb-44ca-b1d4-114871671fac)
+![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/efe1d8d0-cd16-4f34-aadf-89f6c3514a3a)
+
