@@ -84,7 +84,39 @@ Alamat IP elastis
   - Efisiensi, Kepadatan yang lebih tinggi di subnet, penggunaan VPN dan AWS Direct Connect
   - Tanpa batas langsung, batas langsung dapat dihindari, misal 50 antarmuka virtual per koneksi AWS Direct Connect melalui arsitektur jaringan yang disederhanakan
   - Pengoptimalan biaya -Biaya dapat dioptimalkan melalui penggunaan kembali gateway NAT, endpoint antarmuka VPC, dan lalu lintas antar-Availability Zone
-[link](link)
+### VPN AWS Site-to-Site
+Menghubungkan VPC Anda ke jaringan jarak jauh
+### AWS Direct Connect
+Menghubungkan VPC Anda ke jaringan jarak jauh dengan menggunakan koneksi jaringan khusus
+### AWS Transit Gateway
+Alternatif koneksi hub-and-spoke untuk peering VPC
+## Keamanan VPC
+  Grup keamanan memiliki aturanyang mengontrol lalu lintas masuk dan keluar. Saat Anda membuat grup keamanan, grup tersebut tidak memiliki aturan masuk. Oleh karena itu, tidak ada lalu lintas masuk yang berasal dari host lainnya ke instans Anda yang diizinkan, hingga Anda menambahkan aturan masuk ke grup keamanan. Secara default, grup keamanan mencakup aturan keluar yang mengizinkan semua lalu lintas keluar. 
+  Grup keamanan stateful, yang berarti bahwa informasi status disimpan bahkan setelah permintaan diproses. Karena itu, jika Anda mengirim permintaan dari instans Anda, lalu lintas respons untuk permintaan itu diizinkan masuk, terlepas dari aturan masuk grup keamanan. Respons terhadap lalu lintas masuk yang diizinkan tersebut diizinkan untuk keluar, terlepas dari aturan lalu lintas keluarnya.
+  - Membangun keamanan dalam arsitektur VPC:
+    - Isolasi subnet jika memungkinkan
+    - Pilih perangkat gateway atau koneksi VPN yang sesuai untuk kebutuhan
+    - Gunakan firewall
+  - Grup keamanan dan jaringan ACL adalah opsi firewall yang dapat digunakan untuk mengamankan VPC.
+## Amazon Route S3
+  Amazon Route 53 adalah layanan web Domain Name System (DNS) cloud dengan ketersediaan tinggi dan dapat diskalakan. Amazon Route 53 dirancang untuk memberikan cara yang andal dan hemat biaya pada developer dan bisnis untuk merutekan pengguna ke aplikasi internet dengan menerjemahkan nama (seperti www.example.com) ke alamat IP numerik (seperti 192.0.2.1) yang digunakan komputer untuk terhubung satu sama lain. Selain itu, Amazon Route 53 sepenuhnya sesuai dengan IPv6.
+  Amazon Route 53 menghubungkan permintaan pengguna secara efektif ke infrastruktur yang menjalankan AWS—seperti Amazon EC2 instance, load balancer Elastic Load Balancing, atau bucket Amazon S3—dan juga dapat digunakan untuk merutekan pengguna ke infrastruktur di luar AWS.
+  - Amazon Route 53 adalah layanan web DNS cloud yang tersedia dengan sangat baik dan dapat diskalakan yang menerjemahkan nama domain ke alamat IP numerik.
+  - Amazon Route 53 mendukung beberapa jenis kebijakan perutean.
+  - Deployment Multiwilayah meningkatkan kinerja aplikasi Anda untuk audiens global.
+  - Anda dapat menggunakan failover Amazon Route 53 untuk meningkatkan ketersediaan aplikasi Anda.
+## Amazon CloudFront
+ CDN adalah sistem server pembuatan cache yang didistribusikan secara global yang mempercepat penyampaian konten 
+  Amazon CloudFront adalah layanan CDN cepat yang memberikan data, video, aplikasi, dan antarmuka pemrograman aplikasi (API) dengan aman kepada pelanggan secara global dengan latensi rendah dan kecepatan transfer yang tinggi. Hal Ini juga menyediakan lingkungan yang ramah developer. Amazon CloudFront memberikan file ke pengguna melalui jaringan global edge location dan cache edge Regional. Amazon CloudFront berbeda dari solusi penyampaian konten tradisional karena memungkinkan Anda mendapatkan manfaat penyampaian konten kinerja tinggi dengan cepat tanpa kontrak negosiasi, harga tinggi, atau biaya minimum. Seperti layanan AWS lainnya, Amazon CloudFront adalah penawaran mandiri dengan harga bayar sesuai pemakaian.
+  Amazon CloudFront memberikan konten melalui jaringan pusat data di seluruh dunia yang disebut edge location. Saat pengguna mengajukan permintaan konten yang Anda sajikan dengan CloudFront, pengguna dirutekan ke edge location yang menyediakan latensi (atau penundaan waktu) terendah, sehingga konten dikirimkan dengan kinerja terbaik. Edge location CloudFront dirancang untuk menyajikan konten populer dengan cepat kepada pemirsa Anda.
+  Manfaat Amazon CloudFront:
+  - Cepat dan global
+  - Keamanan di edge
+  - Dapat diprogram sepenuhnya
+  - Terintegrasi secara mendalam denga AWS
+  - Hemat Biaya
+    Harga Amazon CloudFront:
+    ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/99e3266f-3528-4fc5-be08-b70bfdd45757)
 
 ## Knowledge Chapter 5
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/81a33c48-cfd2-48d3-8a15-f260f7001cb2)
