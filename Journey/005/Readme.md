@@ -85,3 +85,6 @@ Alamat IP elastis
   - Tanpa batas langsung, batas langsung dapat dihindari, misal 50 antarmuka virtual per koneksi AWS Direct Connect melalui arsitektur jaringan yang disederhanakan
   - Pengoptimalan biaya -Biaya dapat dioptimalkan melalui penggunaan kembali gateway NAT, endpoint antarmuka VPC, dan lalu lintas antar-Availability Zone
 [link](link)
+
+## Knowledge Chapter 5
+![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/81a33c48-cfd2-48d3-8a15-f260f7001cb2)
