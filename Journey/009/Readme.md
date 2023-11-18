@@ -8,6 +8,9 @@
 ## Amazon Elastic Block Store (Amazon EBS)
   Amazon EBS memberikan volume penyimpanan tingkat blok yang persisten untuk digunakan dengan Amazon EC2 instance. Penyimpanan persisten adalah perangkat penyimpanan data yang menyimpan data setelah daya ke perangkat dimatikan. Terkadang, ini juga disebut penyimpanan non-volatile.
   Amazon EBS memungkinkan membuat volume penyimpanan individu dan melampirkannya ke Amazon EC2 instance:
+  - Amazon EBS menawarkan penyimpanan tingkat blok
+  - Volume direplikasi secara otomatis dalam Availabilty Zone
+  - Hal ini dapat dicadangkan secara otomatis ke Amazon S3 melalui snapshot
 ## Use Case
 
 
