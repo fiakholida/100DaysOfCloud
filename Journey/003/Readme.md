@@ -5,6 +5,7 @@
 - Model tanggung jawab bersama AWS
 - AWS Identity Access Management (IAM)
 - Mengamankan akun AWS baru
+- Mengamankan akun
 - Mengamankan data di AWS
 - Berupaya Memastikan Kepatuhan
 
@@ -94,11 +95,19 @@ Ada 2 jenis kebijakan, yaitu: **berbasis identitas** dan **berbasis sumber daya*
 - Mengonfigurasi kebijakan kata sandi yang kuat.
 - Delegasikan penggunaan peran, alih-alih pembagian kredensial.
 - Pantau aktivitas akun menggunakan AWS CloudTrail.
-
+## - Mengamankan akun 
+  AWS Organizations adalah layanan manajemen akun yang memungkinkan Anda mengonsolidasikan beberapa akun AWS ke sebuahorganisasiyang Anda buat dan kelola secara terpusat. Di sini, fokusnya adalah pada fitur keamanan yang disediakan AWS Organizations. Salah satu fitur keamanan yang berguna adalah bahwa Anda dapat mengelompokkan akun ke unit organisasi(OU) dan melekatkan kebijakan akses yang berbeda untuk setiap OU.
+  SCP menawarkan kontrol pusat atas izin maksimum yang tersediauntuk semua akun di organisasi Anda, sehingga memungkinkan Anda memastikan bahwa akun Anda tetap berada dalam pedoman kontrol akses organisasi Anda. SCP hanya tersedia di organisasi yang mengaktifkan semua fitur, termasuk tagihan terkonsolidasi.
+  AWS Key Management Service (AWS KMS) adalah layanan yang memungkinkan Anda membuat dan mengelola kunci enkripsi, dan untuk mengontrol penggunaan enkripsi di berbagai layanan AWS dan aplikasi Anda. AWS KMS adalah layanan aman dan tangguh yang menggunakan modul keamanan perangkat keras (HSM) yang divalidasi di bawah Standar Pemrosesan Informasi Federal (FIPS) 140-2(atau sedang dalam proses divalidasi) untuk melindungi kunci Anda. AWS KMS juga terintegrasi dengan AWS CloudTrail guna menyediakan log untuk semua penggunaan kunci Anda untuk membantu memenuhi kebutuhan peraturan dan kepatuhan.
+  Amazon Cognito membantu Anda memenuhi beberapa persyaratan keamanan dan kepatuhan, termasuk persyaratan untuk organisasi yang sangat diatur seperti perusahaan kesehatan dan perdagangan. Amazon Cognito memenuhi syarat untuk digunakan dengan US Health Insurance Portability and Accountability Act (HIPAA).
+  AWS Shield adalah layanan perlindungan distributed denial of service (DDoS) terkelola yang melindungi aplikasi yang berjalan di AWS. AWS Shield menyediakan deteksi yang selalu aktif dan mitigasi inline otomatis yang meminimalkan waktu henti dan latensi aplikasi, jadi tidak perlu melibatkan AWS Support untuk mendapatkan manfaat dari perlindungan DDoS.
+  AWS Shield Standard secara otomatis diaktifkan untuk semua pelanggan AWS tanpa biaya tambahan apa pun.AWS Shield Advanced adalah layanan berbayar opsional. AWS Shield Advanced memberikan perlindungan tambahan terhadap serangan yang lebih canggih dan lebih besar terhadap aplikasi Anda yang berjalan di Amazon EC2, Elastic Load Balancing, Amazon CloudFront, AWS Global Accelerator, dan Amazon Route 53. AWS Shield Advanced tersedia untuk semua pelanggan.
 ## - Mengamankan data di AWS
+  Enkripsi data adalah alat penting untuk digunakan ketika tujuan Anda adalah untuk melindungi data digital. Enkripsi data mengambil data yang dapat dibaca dan mengodekannya sehingga tidak dapat dibaca oleh siapa pun yang tidak memiliki akses ke kunci rahasia yang dapat digunakan untuk memecahkan kode itu. Jadi, bahkan jika penyerang mendapatkan akses ke data Anda, mereka tidak bisa melakukan apa pun.Data saat istirahat mengacu pada data yang tersimpan secara fisik pada disk atau pita.
 ## - Berupaya Memastikan Kepatuhan
-
-[link](link)
+  AWS terlibat dengan badan penyertifikasi eksternal dan auditor independen untuk memberi pelanggan informasi yang memadai tentang kebijakan, proses, dan kontrol yang ditetapkan dan dioperasikan oleh AWS.Sebuah CantumanAWS Program Kepatuhantersedia secara lengkap. Juga, terkait detail tentang layanan AWS yang berada dalam lingkup program jaminan AWS, lihat Layanan AWS dalam Cakupan oleh Program Kepatuhan.
+  AWS Config adalah layanan yang memungkinkan Anda mengakses, mengaudit, dan mengevaluasi konfigurasi sumber daya AWS Anda. AWS Config terus memantau dan mencatat konfigurasi sumber daya AWS Anda dan memungkinkan Anda mengautomasi evaluasi konfigurasi tercatat terhadap konfigurasi yang diinginkan. Dengan Aws Config, Anda dapat meninjau perubahan dalam konfigurasi dan hubungan antara sumber daya AWS, meninjau riwayat konfigurasi sumber daya detail, dan menentukan kepatuhan Anda secara keseluruhan terhadap konfigurasi yang ditentukan dalam pedoman internal Anda. Ini memungkinkan Anda menyederhanakan audit kepatuhan, analisis keamanan, manajemen perubahan, dan pemecahan masalah operasional.
+  AWS Artifact menyediakan pengunduhan dokumen keamanan dan kepatuhan AWS sesuai permintaan, seperti sertifikasi ISO AWS, Payment Card Industry (PCI), dan laporan Service Organization Control (SOC). Anda dapat mengirimkan dokumen keamanan dan kepatuhan (juga dikenal sebagaiartefak audit) kepada auditor atau regulator Anda untuk menunjukkan keamanan dan kepatuhan infrastruktur dan layanan AWS yang Anda gunakan. Anda juga dapat menggunakan dokumen-dokumen ini sebagai pedoman untuk mengevaluasi arsitektur cloud Anda sendiri dan menilai keefektifan kontrol internal perusahaan Anda. AWS Artifact menyediakan dokumen tentang AWS saja. Pelanggan AWS bertanggung jawab mengembangkan atau memperoleh dokumen yang menunjukkan keamanan dan kepatuhan perusahaan mereka.
 
 ## Knowledge Chapter 4
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/efe1d8d0-cd16-4f34-aadf-89f6c3514a3a)
