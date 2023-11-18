@@ -48,7 +48,7 @@
   - **AWS Marketplace** - Templat yang telah dikonfigurasi dari pihak ketiga
   - **AMI Komunitas** - AMI yang dibagikan oleh orang lain, gunakanlah secara hati-hati
 ### 2. Pilih tipe instans
-    Tipe instans terdiri atas berbagai kombinasi CPU, memori, penyimpanan, dan kapasitas jaringan. Tipe instans berbeda memberikan fleksibilitas dalam memilih campuran sumber daya yang tepat untuk aplikasi Anda.
+   Tipe instans terdiri atas berbagai kombinasi CPU, memori, penyimpanan, dan kapasitas jaringan. Tipe instans berbeda memberikan fleksibilitas dalam memilih campuran sumber daya yang tepat untuk aplikasi Anda.
 ### Penamaan dan ukuran jenis EC2 instance
   T adalah nama family, yang kemudian diikuti dengan angka. Di sini, angka tersebut adalah 3. Angka itu adalah nomorgenerasi dari jenis tersebut. Jadi, instans t3 adalah generasi ketiga dari family T. Secara umum, tipe instans dari generasi yang lebih tinggi bersifat lebih kuat dan memberikan nilai lebih untuk harganya.Bagian selanjutnya dari nama tersebut adalah porsi ukuran instans. Ketika membandingkan ukuran, penting untuk melihat porsi koefisien dari kategori ukuran.
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/42824a2c-7351-42b0-8a5d-d99d3dac6132)
