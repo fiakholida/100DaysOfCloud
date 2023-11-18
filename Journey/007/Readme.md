@@ -102,7 +102,7 @@ Contohnya, t3.2xlarge memiliki dua kali vCPU dan memori dibanding t3.xlarge. Beg
   - Model harga optimal
   - Mengoptimalkan pilihan penyimpanan
 ## Container services
-  Kontainermerupakan metode virtualisasi sistem operasiyang memungkinkan Anda menjalankan aplikasi dan dependensinya dalam proses yang sumber dayanya terisolasi. 
+  Kontainer merupakan metode virtualisasi sistem operasiyang memungkinkan Anda menjalankan aplikasi dan dependensinya dalam proses yang sumber dayanya terisolasi. 
 ## Introduction to AWS Lambda
   AWS Lambda adalah layanan komputasi nirserver yang digerakkan event. Lambda memungkinkan Anda menjalankan kode tanpa menyediakan atau mengelola server. Fungsi Lambda, yaitu sumber daya AWS berisi kode yang Anda unggah. Anda kemudian mengatur fungsi Lambda untuk dipicu, baik secara terjadwal atau dalam merespons suatu peristiwa. Kode Anda hanya berjalan ketika dipicu.
 Poin penting dari bagian modul ini:
