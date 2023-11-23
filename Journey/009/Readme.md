@@ -44,6 +44,7 @@
 4. Transfer data
    - Transfer data masuk gratis
    - Transfer data keluar di seluruh Wilayah terkena biaya
+     
 ## Amazon Simple Storage Service (Amazon S3)
   Amazon S3 adalah penyimpanan tingkat objek, yang artinya jika Anda ingin mengubah satu bagian file, Anda harus melakukan perubahan lalu mengunggah ulang seluruh file yang diubah. Amazon S3 menyimpan data sebagai objek dalam sumber daya yang dikenal sebagai bucket.
   Data yang Anda simpan di Amazon S3 tidak terkait dengan server tertentu, dan Anda tidak perlu mengelola infrastruktur sendiri. Anda dapat menempatkan objek ke Amazon S3 sebanyak yang Anda inginkan. Amazon S3 menyimpan triliunan objek dan secara teratur mencapai jutaan permintaan per detik.
@@ -58,40 +59,45 @@
 ## Amazon Elastic File System (Amazon EFS)
   Amazon Elastic File System (Amazon EFS)menyediakan penyimpanan file yang sederhana, dapat diskalakan, dan elastis untuk digunakan dengan layanan AWS dan sumber daya on-premise. Sistem ini mudah digunakan dan menawarkan antarmuka sederhana yang memungkinkan Anda membuat dan mengonfigurasi sistem file dengan cepat dan mudah.
   Amazon EFS dibangun untuk menskalakan sesuai permintaan secara dinamis tanpa mengganggu aplikasi—yang akan tumbuh dan menyusut secara otomatis saat Anda menambahkan dan menghapus file. Ini dirancang agar aplikasi Anda memiliki penyimpanan yang dibutuhkan, saat aplikasi membutuhkannya.
-  Amazon EFS menyediakan penyimpanan file di cloud. Dengan Amazon EFS, Anda dapat membuat sistem file, memasang sistem file ke Amazon EC2 instance, kemudian membaca dan menulis data ke dan dari sistem file Anda. Anda dapat memasang sistem file Amazon EFS di VPC Anda melalui NFS versi 4.0 dan 4.1 (NFSv4).
+  Fitu Amazon EFS:
+  - Penyimpanan file di AWS Cloud
+  - Bekerja dengan baik untuk *big data* dan analitik, alur kerja pemrosesan media, manajemen konten, penayangan web, dan dirktori rumah
+  - Siste file berskala petabyte dan latensi rendah
+  - Penyimpanan bersama
+  - kapasitas elastis
+  - Mendukung Sistem File Jaringan (NFS) versi 4.0 dan 4.1 (NFSv4)
+  - Kompatibel dengan semua AMI berbasis-Linus untuk Amazon EC2
+
+  Amazon EFS adalah layanan terkelola penuh yang memudahkan penyiapan dan penskalaan penyimpanan file di AWS Cloud. Anda dapat menggunakan Amazon EFS untuk membangun sistem file untuk big data dan analitik, alur kerja pemrosesan media, pengelolaan konten, penayangan web, dan direktori rumah.
+  Di Amazon EFS, sistem file adalah sumber daya utama. Setiap sistem file memiliki karakteristik seperti:
+  - ID
+  - Token pembuatan
+  - Waktu pembuatan
+  - Ukuran sistem file dalam byte
+  - Jumlah target mount yang dibuat untuk sistem file
+  - Status sistem file
+    
+    Target mount: Untuk mengakses sistem file, Anda harus membuat target pemasangan di VPC Anda. Tiap target mount memiliki properti berikut:
+    - ID target mount
+    - ID subnet untuk subnet tempatnya dibuat
+    - ID sistem file untuk sistem file tempatnya dibuat
+    - Alamat IP tempat sistem file dapat di-mount
+    - Status target mount
 ## Amazon Simple Storage Service Glacier
+  Amazon S3 Glacier adalah layanan pengarsipan data yang didesain untuk keamanan, ketahanan, dan sangat hemat biaya.
+  - Amaozon S3 Glacier didesain untuk memberikan daya tahan hingga 99,999999999% pada objek
+  - Mendukung enkripsi data bergerak dan data diam mellaui Secure Sockets Layer (SSL) atau Transport Layer Security (TLS)
+  - Fitur Vault Lock memberlakukan kepatuhan mellaui kebijakan
+  - Desain berbiaya sangat rendah ini ideal untuk pengarsipan jangka panjajng
+    - Menyediakan tiga opsi akses ke arsip-dipercepat, standar, dan massal-rentang waktu pengambilan berkisar dari beberapa menit hingga beberapa jam.
 
-
-
-## Cloud Research
-
-
-
-## Try yourself
-
-
-
-### Step 1 — Summary of Step
-
-
-
-### Step 1 — Summary of Step
-
-
-### Step 3 — Summary of Step
-
-
-
-## ☁️ Cloud Outcome
-
-
-
-## Next Steps
-
-
-
-## Social Proof
-
-
-
+  Ada tiga istilah utama Amazon S3 Glacier yang harus di pahami:
+  - Arsip-Tiap objek (misalnya foto, video, file, atau dokumen yang Anda simpan di Amazon S3 Glacier. Ini adalah unit penyimpanan dasar di Amazon S3 Glacier. Tiap arsip memiliki ID uniknya sendiri dan dapat memiliki deskripsi.
+  - Vault–Kontainer untuk menyimpan arsip. Saat Anda membuat vault, Anda akan menentukan nama vault dan Wilayah untuk menemukan vault.
+  - Kebijakan akses vault–Menentukan siapa saja yang dapat dan tidak dapat mengakses data yang disimpan dalam vault, dan operasi apa yang dapat dilakukan dan tidak dapat dilakukan pengguna. Satu kebijakan izin akses vault dapat dibuat bagi tiap vault agar dapat mengelola izin akses untuk vault tersebut.
+    tiga opsi untuk mengambil data dengan berbagai waktu dan biaya akses:
+    - Pengambilan dipercepat biasanya tersedia dalam waktu 1–5 menit (biaya tertinggi).
+    - Pengambilan standar biasanya selesai dalam waktu 3–5 jam (lebih lama dari opsi dipercepat, lebih cepat dari opsi massal).
+    - Pengambilan massal biasanya selesai dalam 5–12 jam (biaya paling rendah)
+## Knowledge Chapter 7
 [link](link)
