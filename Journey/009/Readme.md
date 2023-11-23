@@ -10,8 +10,40 @@
   Amazon EBS memungkinkan membuat volume penyimpanan individu dan melampirkannya ke Amazon EC2 instance:
   - Amazon EBS menawarkan penyimpanan tingkat blok
   - Volume direplikasi secara otomatis dalam Availabilty Zone
-  - Hal ini dapat dicadangkan secara otomatis ke Amazon S3 melalui snapshot
-
+  - Hal ini dapat dicadangkan secara otomatis ke Amazon S3 melalui snapshot cadangan
+  - Penggunaan vlume Amazon EBS mencakup:
+    - Volume boot dan penyimpanan untuk instans Amazon EC2
+    - Penyimpanan data dengan sistem file
+    - Host basis data
+    - Aplikasi korporasi
+### Fitur Amazon EBS
+- Snapshot
+  - Snapshot waktu tertentu
+  - Membuat ulang volume baru kapan saja
+- Enkripsi
+  - Volume Amazon EBS terenkripsi
+  - tanpa biaya tambahan
+- Elastisitas
+  - Meningkatkan kapasitas
+  - Mengubah ke tipe yang berbeda
+### Amazon EBS: Volume, IOPS, dan harga
+1. Volume
+   - Volume Amazon EBS bertahan secara independen dari instans
+   - Semua jenis volume dikenakan biaya dengan jumlah yang disediakan per bulan
+2. IOPS
+   - SSD Tujuan Umum
+     - Dikenakan biaya sejumlah yang disediakan alam GB per bulan hiingga penyimpanan dileaskan
+   - Magnetik
+     - Dikenakan biaya sejumlah permintaan ke volume
+   - SSD Provisioned IOPS
+     - DIkenakan biaya sejumlah yang disediakan di IOPS (dikalikan dengan persentase hari yang disediakan untuk bulan tersebut)
+       Harga dan penyediaan Amazon EBS rumit. Secara umum, Anda membayar untuk ukuran volume dan penggunaannya.
+### Amazon EBS: Snapshot dan transfer data
+3. Snapshot
+   - Biaya tambahan snapshot Amazon EBS ke Amazon S3 adalah per Gb-bulan dari data yang disimpan
+4. Transfer data
+   - Transfer data masuk gratis
+   - Transfer data keluar di seluruh Wilayah terkena biaya
 ## Amazon Simple Storage Service (Amazon S3)
   Amazon S3 adalah penyimpanan tingkat objek, yang artinya jika Anda ingin mengubah satu bagian file, Anda harus melakukan perubahan lalu mengunggah ulang seluruh file yang diubah. Amazon S3 menyimpan data sebagai objek dalam sumber daya yang dikenal sebagai bucket.
   Data yang Anda simpan di Amazon S3 tidak terkait dengan server tertentu, dan Anda tidak perlu mengelola infrastruktur sendiri. Anda dapat menempatkan objek ke Amazon S3 sebanyak yang Anda inginkan. Amazon S3 menyimpan triliunan objek dan secara teratur mencapai jutaan permintaan per detik.
