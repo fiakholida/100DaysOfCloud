@@ -14,9 +14,9 @@
 Fill in your details where you see this icon ✍️
 We have provided a sample Day Journey entry staring at 0. You can delete this example.
 
-## [✍️ Fia Kholida Amin]'s Cloud Journey
+## [ Fia Kholida Amin]'s Cloud Journey
 
-[✍️ Introduce yourself]
+[✍ halo gess]
 
 [✍️ Tell us why you started this challenge]
 
