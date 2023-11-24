@@ -100,4 +100,5 @@
     - Pengambilan standar biasanya selesai dalam waktu 3–5 jam (lebih lama dari opsi dipercepat, lebih cepat dari opsi massal).
     - Pengambilan massal biasanya selesai dalam 5–12 jam (biaya paling rendah)
 ## Knowledge Chapter 7
-[link](link)
+![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/04ef3926-b0f1-4140-b84f-aee721d78b5d)
+
