@@ -274,5 +274,5 @@ Seperti yang dibahas sebelumnya, Infrastruktur Global AWS dapat dibagi menjadi t
 - AWS Well-Architected Tool menyediakan bantuan dalam meninjau dan meningkatkan beban kerja Anda.
 - AWS CloudTrail melacak aktivitas pengguna dan penggunaan API.
 
-## Knowledge Chapter 3
+## ☁️ Knowledge Chapter 3
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/2649cc5e-6fff-4e2a-b3bc-fdb7f85ee1e8)
