@@ -118,5 +118,5 @@ Alternatif koneksi hub-and-spoke untuk peering VPC
     Harga Amazon CloudFront:
     ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/99e3266f-3528-4fc5-be08-b70bfdd45757)
 
-## Knowledge Chapter 5
+## ☁️ Knowledge Chapter 5
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/81a33c48-cfd2-48d3-8a15-f260f7001cb2)
