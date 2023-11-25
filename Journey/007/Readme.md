@@ -121,5 +121,5 @@ Poin penting dari bagian modul ini:
 - Mengurangi kompleksitas manajemen.
 - Elastic Beanstalk mendukung Java, .NET, PHP, Node.js, Python, Ruby, Go, dan Docker.
 - Tidak ada biaya untuk Elastic Beanstalk. Anda hanya membayar sumber daya AWS yang digunakan.
-## Knowledge Chapter 6
+## ☁️ Knowledge Chapter 6
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/98cf1567-c6b7-473f-8b7b-a172ecf71f1b)
