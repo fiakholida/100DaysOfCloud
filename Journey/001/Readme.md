@@ -64,5 +64,5 @@
 - Data Center
   Data Center merupakan ruangan yang dirancang khusus yang berisi infrastruktur komputasi yang dibutuhkan sistem TI, seperti server, drive penyimpanan data, dan peralatan jaringan yang biasanya terhubung dengan jaringan internet.
   
-## Knowledge Chapter 1
+## ☁️ Knowledge Chapter 1
 ![image](https://github.com/fiakholida/100DaysOfCloud/assets/140806089/aa3f6464-5a60-4793-9514-725415acb568)
