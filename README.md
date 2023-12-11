@@ -34,7 +34,7 @@ We have provided a sample Day Journey entry staring at 0. You can delete this ex
 - [ ] ☁️ 5 > [AWS Cloud Foundation Chapter 5](Journey/005/Readme.md)
 - [ ] ☁️ 6 > [Lab 2: Build your VPC and Launch a Web Server](Journey/006/Readme.md)
 - [ ] ☁️ 7 > [AWS Cloud Foundation Chapter 6](Journey/007/Readme.md)
-- [ ] ☁️ 8 > [Lab 3: Compute](Journey/008/Readme.md)
+- [ ] ☁️ 8 > [Lab 3: Introduction to Amazon EC2](Journey/008/Readme.md)
 - [ ] ☁️ 9 > [AWS Cloud Foundation Chapter 7](Journey/009/Readme.md)
 - [ ] ☁️ 10 > [Lab 4: Working with EBS](Journey/010/Readme.md)
 
