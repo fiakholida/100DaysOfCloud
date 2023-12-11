@@ -1,3 +1,3 @@
-# Lab 3 - Compute [Pemateri: Tiara Dwi Maulita Sari]
+# Lab 3 - Introduction to Amazon EC2 [Pemateri: Tiara Dwi Maulita Sari]
 ## Cloud Research
-dokumentasi Lab 3 - Compute [ng kene](https://docs.google.com/document/d/13jqdCZ6q431py0dRrHS4LQvrdREsuv_XIW1bBIFR3WM/edit?usp=sharing)
+dokumentasi Lab 3 - Introduction to Amazon EC2 [ng kene](https://docs.google.com/document/d/12uUP5b24sYQasQsIwWqSXacTM8OD6GgEHi2vF5Y_Gd8/edit?usp=drive_link)
