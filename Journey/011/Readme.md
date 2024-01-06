@@ -11,7 +11,8 @@
   Ketika basis data Anda on-premise, administrator basis data bertanggung jawab atas semuanya. Tugas administrasi basis data mencakup mengoptimalkan aplikasi dan kueri; menyiapkan perangkat keras; patching perangkat keras; menyiapkan jaringan dan daya; dan mengelola pemanasan, ventilasi, dan AC (HVAC).
   
 ## Amazon DynamoDB
-
+  Amazon DynamoDB adalah layanan basis data NoSQL yang cepat dan fleksibel untuk semua aplikasi yang memerlukan latensi satu digit milidetik yang konsisten pada segala skala. 
+  Amazon mengelola semua infrastruktur data inti untuk layanan ini dan secara redundan menyimpan data di beberapa fasilitas di Wilayah AS asli sebagai bagian dari arsitektur yang toleran terhadap kesalahan. Dengan DynamoDB, Anda dapat membuat tabel dan item. Anda dapat menambahkan item ke dalam tabel. Sistem akan secara otomatis membagi data Anda dan memiliki penyimpanan tabel untuk memenuhi persyaratan workload. Tidak ada batas praktis pada jumlah item yang dapat Anda simpan dalam tabel. Misalnya, beberapa pelanggan memiliki tabel produksi yang berisi miliaran item. 
 ## Amazon Redshift
 
 ## Amazon Aurora
